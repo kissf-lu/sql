@@ -9,8 +9,8 @@ CONCAT(
 ) AS 'status_time'
 FROM `i_equipment_io`
 WHERE 
-equipment_status =0
-AND equipment_port LIKE 'a1%'
+equipment_status =1
+#AND equipment_port LIKE 'a1%'
 GROUP BY `equipment_port`, CONCAT(
 `equipment_status`, ',',
 `start_time`
